@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis AI</title>
+</head>
+<body>
+    <h1>Jarvis AI created by Pranshul Jain</h1>
+
+    <!-- Display response from the server -->
+    {% if response %}
+        <p><strong>Jarvis:</strong> {{ response }}</p>
+    {% endif %}
+
+    <!-- Command input form -->
+    <form method="POST" action="/">
+        <label for="command">Enter your command:</label>
+        <input type="text" id="command" name="command" placeholder="Type a command" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
